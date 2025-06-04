@@ -64,7 +64,7 @@ header {
 /*first section with background*/
 
 .first-section {
-    background-image: url("../img/back1.png");
+    background-image: url("../img/back1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -199,7 +199,7 @@ header {
 
 .third-section {
     height: 350px;
-    background-image: url("../img/back.png");
+    background-image: url("../img/back.webp");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -370,7 +370,7 @@ header {
 
 footer {
     height: 350px;
-    background-image: url("../img/back.png");
+    background-image: url("../img/back.webp");
     background-position: cover;
     background-repeat: no-repeat;
 }
