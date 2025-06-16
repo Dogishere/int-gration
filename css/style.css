@@ -59,15 +59,13 @@ header {
   border-radius: 25px;
 }
 
-/*first section with background*/
-
 .first-section {
-    background-image: url("../img/back1.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 900px;
+  background-image: url("../img/back1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 900px;
 }
 
 .centered-text {
@@ -91,12 +89,13 @@ span {
 }
 
 .img-card {
-  width: 918px;
+  width: 908px;
   height: 554px;
   margin: auto;
 }
 
-.top-section , .top2-section{
+.top-section,
+.top2-section {
   display: inline-block;
   vertical-align: top;
 }
@@ -108,15 +107,14 @@ span {
 .top-section .img-section-1,
 .top-section .img-section-2 {
   display: inline-block;
-
 }
 
 .img-section-1 h1,
-p,
+.img-section-1 p,
 .img-section-2 h1,
-p,
+.img-section-2 p,
 .img-section-3 h1,
-p {
+.img-section-3 p {
   padding: 10px;
   color: #fff;
   text-align: center;
@@ -138,18 +136,18 @@ p {
 .img-section-1 img,
 .img-section-2 img,
 .img-section-3 img {
-  display: flex;
-  justify-self: center;
+  display: block;
+  margin: auto;
   width: 100px;
 }
 
 .centered-button {
+  display: block;
+  margin: auto;
   padding: 0.7rem 2rem;
   background: #fff;
   color: brown;
   border-radius: 20px;
-  display: flex;
-  justify-self: center;
   cursor: pointer;
   border-style: unset;
 }
@@ -163,15 +161,23 @@ p {
 /* second section */
 
 .second-section {
-  height: 700px;
+  height: 577px;
   background: rgba(201, 199, 199, 0.3);
 }
 
 .second-card {
-  width: 100%;
-  height: 400px;
-  /* display: flex; */
-  /* justify-content: center; */
+  width: 908px;
+  height: 450px;
+  margin: auto;
+}
+
+.second-card-child-1,
+.second-img-section {
+  display: inline-block;
+}
+
+.second-card-child-2 {
+  display: inline-block;
 }
 
 .second-section-title {
@@ -186,8 +192,9 @@ p {
 }
 
 .second-img-section img {
-  width: 250px;
-  object-fit: contain;
+  width: 180px;
+  display: block;
+  margin: auto;
 }
 
 .second-img-section h1 {
@@ -198,29 +205,28 @@ p {
 }
 
 .second-img-section h1,
-p {
+.second-img-section p {
   color: rgba(20, 20, 20, 0.8);
 }
 
 .second-centered-button {
+  display: block;
+  margin: auto;
   margin-top: 25px;
   padding: 1rem 3rem;
   border-radius: 25px;
   background: #fff;
   border-style: unset;
   cursor: pointer;
-  display: flex;
-  justify-self: center;
 }
 
 /*third section*/
 
 .third-section {
-    height: 350px;
-    background-image: url("../img/back.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-
+  height: 350px;
+  background-image: url("../img/back.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .third-section-text {
@@ -243,14 +249,20 @@ p {
 }
 
 .signUp {
-  display: flex;
-  justify-content: center;
+  width: 505px;
+  display: block;
+  margin: auto;
 }
+
+.inputForm,
+.signUpButton {
+  display: inline-block;
+}
+
 .inputForm {
   padding: 14px 70px;
   border-radius: 25px;
   border: 1px solid #fff;
-  opacity: 0.6;
   background: #ffffff36;
 }
 
@@ -260,14 +272,13 @@ p {
 }
 
 .signUpButton {
-  position: relative;
-  right: 70px;
   padding: 1rem 5rem;
   border-radius: 25px;
   background: #fff;
   border-style: unset;
   color: brown;
   cursor: pointer;
+  margin-left: -50px;
 }
 
 .signUpButton:hover {
@@ -282,20 +293,32 @@ p {
   background: #fff;
   padding-top: 40px;
   height: 700px;
-  display: grid;
-  justify-content: center;
 }
 
-.top-left {
-  width: 100%;
+.fourth-div {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.top-left,
+.bottom-right {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+.text-left,
+.box-right {
+  display: inline-block;
 }
 
 .text-left {
   width: 380px;
   height: 200px;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-right: 50px;
-  float: left;
+  vertical-align: top;
 }
 
 .text-left p {
@@ -307,7 +330,6 @@ p {
   width: 350px;
   height: 300px;
   border: 1px solid gray;
-  float: right;
 }
 
 .second-signUp-button {
@@ -320,25 +342,26 @@ p {
   cursor: pointer;
 }
 
+.bottom-right {
+  margin-top: 20px;
+}
+
+.box-left,
+.text-right {
+  display: inline-block;
+}
+
 .box-left {
   width: 350px;
   height: 300px;
   border: 1px solid gray;
-  float: left;
 }
 
 .text-right {
   width: 380px;
   height: 200px;
-  padding-top: 20px;
-  float: right;
-}
-
-.text-right {
-  width: 380px;
-  height: 200px;
+  padding-top: 0px;
   padding-left: 50px;
-  float: left;
 }
 
 .text-right p {
@@ -359,16 +382,22 @@ p {
 /* fifth section */
 
 .fifth-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 40px;
-  height: 250px;
   background: rgb(243, 112, 52);
+  height: 300px;
 }
 
-.fifth-section div {
-  width: 250px;
+.lists {
+  display: block;
+  width: 506px;
+  margin: auto;
+  padding-top: 40px;
+  height: 250px;
+}
+
+.lists div {
+  width: 166px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .fifth-section li {
@@ -385,10 +414,10 @@ p {
 /* footer */
 
 footer {
-    height: 350px;
-    background-image: url("../img/back.webp");
-    background-position: cover;
-    background-repeat: no-repeat;
+  height: 350px;
+  background-image: url("../img/back.webp");
+  background-position: cover;
+  background-repeat: no-repeat;
 }
 
 .final-text {
@@ -398,6 +427,27 @@ footer {
 
 .final-text span {
   color: rgb(255, 255, 255);
+}
+
+/* -----------responsive--------------- */
+
+@media screen and (max-width: 1150px) {
+  .box-left,
+  .box-right {
+    display: none;
+  }
+
+  .text-left,
+  .text-right {
+    display: block;
+    width: auto;
+    margin: auto;
+    padding: 0;
+  }
+
+  .top-left {
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 970px) {
@@ -418,7 +468,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   header {
     height: 1409px;
   }
@@ -426,7 +476,7 @@ footer {
   .first-section {
     height: 1309px;
   }
-  
+
   .top-section {
     display: block;
     width: 660px;
@@ -442,12 +492,141 @@ footer {
     margin: auto;
   }
 
-
   .top-section .img-section-1,
   .top-section .img-section-2 {
-   display: inline-block;
+    display: inline-block;
+  }
+
+  .img-card {
+    width: 700px;
+  }
+
+  /* second section */
+  .second-section {
+    height: 860px;
+  }
+
+  .second-card {
+    margin: 0;
+    width: 100%;
+    height: 733px;
+  }
+
+  .second-card-child-1 {
+    display: block;
+    width: 605px;
+    margin: auto;
+  }
+
+  .second-card-child-2 {
+    display: block;
+    width: 300px;
+    margin: auto;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* first section */
+  .centered-text {
+    padding-top: 100px;
+  }
+
+  header {
+    height: 1750px;
+  }
+
+  .first-section {
+    height: 1650px;
+  }
+
+  .img-card {
+    width: 300px;
+  }
+
+  .top-section,
+  .top2-section {
+    display: block;
+  }
+
+  .top-section .img-section-1,
+  .top-section .img-section-2,
+  .top2-section .img-section-3 {
+    display: block;
+    width: 100%;
+    padding: 40px;
+  }
+
+  /* second section */
+  .second-section {
+    height: 1200px;
+  }
+
+  .second-img-section {
+    padding: 0 20px 28px 20px;
+  }
+
+  .top-section,
+  .top2-section,
+  .second-card-child-1,
+  .second-card-child-2 {
+    display: block;
+    width: 300px;
+  }
+
+  .second-card-child-1 .second-img-section {
+    display: block;
+    width: 100%;
+  }
+
+  /* third section */
+  .third-section-text {
+    display: block;
+    margin: auto;
+    width: 300px;
+  }
+
+  .signUp{
+    width: 300px;
+  }
+
+  .signUpButton {
+    padding: 1rem 2rem;
+    margin-left: -112px;
+  }
+  /* fourth section  */
+  .fourth-section{
+    height: 800px;
+  }
+
+  .fourth-div{
+    height: 100%;
   }
 
 
+  .box-left,
+  .box-right {
+    display: none;
+  }
 
+  .text-left,
+  .text-right {
+    display: block;
+    width: auto;
+    margin: auto;
+    padding: 0;
+  }
+
+  .top-left,.bottom-right {
+    height: 350px;
+  }
+
+  /* fifth section */
+  .lists {
+    width: 308px;
+  }
+
+  .lists div {
+    width: 100px;
+  }
 }
